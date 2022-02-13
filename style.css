@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+/*Estilos header*/
+/* Flex container - Flex items */
+.header-container {
+    color: #fff;
+    background-color: #5995da;
+    padding: 20px 0;
+    /* Habilitamos los poderes de FLEX */
+    display: flex;
+    /*Alinear horizontalmente (star-center-end)*/
+    justify-content: center;
+}
+
+.header {
+    border: 1px solid #fff;
+    width: 60%;
+    /*Habilito Flexbox*/
+    display: flex; 
+    /*alinea horizontalmente y distribuye los elementos en todo 
+    el ancho del que los contiene*/
+    justify-content: space-around;
+
+}
+/*Fin estilos header*/
+
+/*Estilos sección productos*/
+
+.section-container {
+    color: #5995da;
+    background-color: #d6e9fe;
+
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    /*Alineación vertical*/
+    align-items: center;
+
+}
+ /*Estilos para photo-grid-container*/
+ .photo-grid-container {
+     display: flex;
+     justify-content: center;
+ }
+
+ .photo-grid {
+     width: 80%;
+     display: flex;
+     justify-content: flex-start;
+
+     /*Flex-wrap:
+     Está atento a que no desboderde ningún 
+     elemento del body */
+     flex-wrap: wrap;
+
+     /*Flex-direction: column / row / column-reverse / row-reverse
+     Cambia la dirección de los elementos. 
+     Sirve para cuando giramos el dispositivo*/
+    
+     flex-direction: column;
+
+ }
+
+ img {
+     width: 50%;
+ }
+
+ .first-item {
+    /*Order: afecta a los elementos, positivo lo lleva
+    lo más a la derecha posible. Negativo, lo lleva 
+    lo más a la izquierda posible*/ 
+    order: 1;
+ }
+
+.last-item {
+    order: -1;
+}
